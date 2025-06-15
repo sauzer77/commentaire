@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système de Commentaires Interactif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ijhc9Jjttqg?si=dSNq7CL9WjMGU7jb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <section id="comment-section">
+            <h2>Section des Commentaires</h2>
+            <div id="comments-list">
+                <p class="no-comments-message">Aucun commentaire pour l'instant. Soyez le premier à poster !</p>
+            </div>
+
+            <form id="comment-form">
+                <h3>Ajouter un nouveau commentaire</h3>
+                <div class="form-group">
+                    <label for="author-name">Votre Nom :</label>
+                    <input type="text" id="author-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment-text">Votre Commentaire :</label>
+                    <textarea id="comment-text" rows="5" required></textarea>
+                </div>
+                <button type="submit" id="post-comment-btn">Poster le Commentaire</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
